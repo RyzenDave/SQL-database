@@ -1,4 +1,8 @@
--- 1. Create Tables with Primary Keys
+CREATE DATABASE SEDCACADEMYDB
+GO
+USE SEDCACADEMYDB
+GO 
+
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY IDENTITY(1,1),
     FirstName NVARCHAR(50) NOT NULL,
@@ -41,6 +45,3 @@ CREATE TABLE GradeDetails (
     Notes NVARCHAR(500)
 );
 
--- 2. Add any indexes for performance
-CREATE INDEX IX_Grades_StudentID ON Grades(StudentID);
-CREATE INDEX IX_Grades_CourseID ON Grades(CourseID);
